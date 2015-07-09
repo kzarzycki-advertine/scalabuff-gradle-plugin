@@ -95,8 +95,8 @@ trait ScalabuffPostCompileAction implements Task, TaskAction, OutputDirectory {
             final Path tempFile = Files.createTempFile('temp', '.scala')
             final Closure replaceFn = replaceScalaFile
 
-            outputDirectory.listFiles().each { File f1 ->
-                f1.eachFileRecurse(FileType.FILES) { File f2 ->
+            outputDirectory.listFiles().each { File f2 ->
+                //f1.eachFileRecurse(FileType.FILES) { File f2 ->
                     if ((f2.name =~ ~/^(.+)\.scala$/).matches()) {
                         replaceFn(f2.toPath(), tempFile)
                     }
