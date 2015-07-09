@@ -3,7 +3,7 @@ plugins {
     id 'com.github.hierynomus.license' version '0.11.0'
 }
 
-group = 'com.github.rafael-brandao.gradle'
+group = 'com.github.kzarzycki-advertine.gradle'
 version = '0.2.0'
 description = 'Gradle plugin for using Google Protocol Buffers in your Scala project.'
 status = { "$version".endsWith('-SNAPSHOT') ? 'integration' : 'release' }()
@@ -19,7 +19,7 @@ afterEvaluate {
 }
 
 ext {
-    pluginId = 'com.github.rafael-brandao.scalabuff'
+    pluginId = 'com.github.kzarzycki-advertine.scalabuff'
 }
 
 repositories {
